@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Droppex Dashboard</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -18,30 +18,114 @@
     <div class="sidebar">
       <div class="logo flex-start">
         <a href="#">
-          <img src="./images/logo.jpg" alt="logo" />
+          <img src="./images/logo.svg" alt="logo" />
           <span>Droppex</span>
         </a>
       </div>
       <div class="new-folder flex-start">
-        <i class="fas fa-folder-plus"></i>
+        <svg
+          width="20"
+          height="20"
+          viewBox="0 0 20 20"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M10.05 14.375C9.70832 14.375 9.42499 14.0917 9.42499 13.75V9.58334C9.42499 9.24168 9.70832 8.95834 10.05 8.95834C10.3917 8.95834 10.675 9.24168 10.675 9.58334V13.75C10.675 14.0917 10.3917 14.375 10.05 14.375Z"
+            fill="#FAFAFA"
+          />
+          <path
+            d="M12.0834 12.2917H7.91669C7.57502 12.2917 7.29169 12.0083 7.29169 11.6667C7.29169 11.325 7.57502 11.0417 7.91669 11.0417H12.0834C12.425 11.0417 12.7084 11.325 12.7084 11.6667C12.7084 12.0083 12.425 12.2917 12.0834 12.2917Z"
+            fill="#FAFAFA"
+          />
+          <path
+            d="M14.1667 18.9583H5.83335C2.15835 18.9583 1.04169 17.8417 1.04169 14.1667V5.83332C1.04169 2.15832 2.15835 1.04166 5.83335 1.04166H7.08335C8.54169 1.04166 9.00002 1.51666 9.58335 2.29166L10.8334 3.95832C11.1084 4.32499 11.15 4.37499 11.6667 4.37499H14.1667C17.8417 4.37499 18.9584 5.49166 18.9584 9.16666V14.1667C18.9584 17.8417 17.8417 18.9583 14.1667 18.9583ZM5.83335 2.29166C2.85835 2.29166 2.29169 2.85832 2.29169 5.83332V14.1667C2.29169 17.1417 2.85835 17.7083 5.83335 17.7083H14.1667C17.1417 17.7083 17.7084 17.1417 17.7084 14.1667V9.16666C17.7084 6.19166 17.1417 5.62499 14.1667 5.62499H11.6667C10.6 5.62499 10.25 5.25832 9.83335 4.70832L8.58335 3.04166C8.15002 2.46666 8.02502 2.29166 7.08335 2.29166H5.83335Z"
+            fill="#FAFAFA"
+          />
+        </svg>
         <span>New folder</span>
       </div>
-      <ul class="menu">
-        <li class="active">
-          <a href="#">
-            <i class="fas fa-th-large"></i>
-            <span>Home</span>
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <i class="far fa-trash-alt"></i>
-            <span>Trash</span>
-          </a>
-        </li>
-      </ul>
+      <nav>
+        <ul class="menu">
+          <li class="active">
+            <a href="#">
+              <div>
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M7.24 2H5.34C3.15 2 2 3.15 2 5.33V7.23C2 9.41 3.15 10.56 5.33 10.56H7.23C9.41 10.56 10.56 9.41 10.56 7.23V5.33C10.57 3.15 9.42 2 7.24 2Z"
+                  />
+                  <path
+                    d="M18.67 2H16.77C14.59 2 13.44 3.15 13.44 5.33V7.23C13.44 9.41 14.59 10.56 16.77 10.56H18.67C20.85 10.56 22 9.41 22 7.23V5.33C22 3.15 20.85 2 18.67 2Z"
+                  />
+                  <path
+                    d="M18.67 13.43H16.77C14.59 13.43 13.44 14.58 13.44 16.76V18.66C13.44 20.84 14.59 21.99 16.77 21.99H18.67C20.85 21.99 22 20.84 22 18.66V16.76C22 14.58 20.85 13.43 18.67 13.43Z"
+                  />
+                  <path
+                    d="M7.24 13.43H5.34C3.15 13.43 2 14.58 2 16.76V18.66C2 20.85 3.15 22 5.33 22H7.23C9.41 22 10.56 20.85 10.56 18.67V16.77C10.57 14.58 9.42 13.43 7.24 13.43Z"
+                  />
+                </svg>
+              </div>
+              <span>Home</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <div>
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M21 6.73001C20.98 6.73001 20.95 6.73001 20.92 6.73001C15.63 6.20001 10.35 6.00001 5.11998 6.53001L3.07998 6.73001C2.65998 6.77001 2.28998 6.47001 2.24998 6.05001C2.20998 5.63001 2.50998 5.27001 2.91998 5.23001L4.95998 5.03001C10.28 4.49001 15.67 4.70001 21.07 5.23001C21.48 5.27001 21.78 5.64001 21.74 6.05001C21.71 6.44001 21.38 6.73001 21 6.73001Z"
+                  />
+                  <path
+                    d="M8.50001 5.72C8.46001 5.72 8.42001 5.72 8.37001 5.71C7.97001 5.64 7.69001 5.25 7.76001 4.85L7.98001 3.54C8.14001 2.58 8.36001 1.25 10.69 1.25H13.31C15.65 1.25 15.87 2.63 16.02 3.55L16.24 4.85C16.31 5.26 16.03 5.65 15.63 5.71C15.22 5.78 14.83 5.5 14.77 5.1L14.55 3.8C14.41 2.93 14.38 2.76 13.32 2.76H10.7C9.64001 2.76 9.62001 2.9 9.47001 3.79L9.24001 5.09C9.18001 5.46 8.86001 5.72 8.50001 5.72Z"
+                  />
+                  <path
+                    d="M15.21 22.75H8.79002C5.30002 22.75 5.16002 20.82 5.05002 19.26L4.40002 9.19C4.37002 8.78 4.69002 8.42 5.10002 8.39C5.52002 8.37 5.87002 8.68 5.90002 9.09L6.55002 19.16C6.66002 20.68 6.70002 21.25 8.79002 21.25H15.21C17.31 21.25 17.35 20.68 17.45 19.16L18.1 9.09C18.13 8.68 18.49 8.37 18.9 8.39C19.31 8.42 19.63 8.77 19.6 9.19L18.95 19.26C18.84 20.82 18.7 22.75 15.21 22.75Z"
+                  />
+                  <path
+                    d="M13.66 17.25H10.33C9.92002 17.25 9.58002 16.91 9.58002 16.5C9.58002 16.09 9.92002 15.75 10.33 15.75H13.66C14.07 15.75 14.41 16.09 14.41 16.5C14.41 16.91 14.07 17.25 13.66 17.25Z"
+                    fill="#939393"
+                  />
+                  <path
+                    d="M14.5 13.25H9.5C9.09 13.25 8.75 12.91 8.75 12.5C8.75 12.09 9.09 11.75 9.5 11.75H14.5C14.91 11.75 15.25 12.09 15.25 12.5C15.25 12.91 14.91 13.25 14.5 13.25Z"
+                    fill="#939393"
+                  />
+                </svg>
+              </div>
+              <span>Trash</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+
       <div class="storage-icon flex-start">
-        <i class="fas fa-cloud"></i>
+        <svg
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M16.68 20.83C16.67 20.83 16.65 20.83 16.64 20.83H5.54998C2.60998 20.62 1.28998 18.36 1.28998 16.34C1.28998 14.54 2.33998 12.54 4.62998 11.99C3.98998 9.49 4.52998 7.14 6.15998 5.44C8.00998 3.5 10.98 2.73 13.53 3.52C15.87 4.24 17.52 6.17 18.12 8.85C20.17 9.31 21.8 10.86 22.46 13C23.17 15.33 22.53 17.72 20.78 19.25C19.66 20.26 18.2 20.83 16.68 20.83ZM5.56998 13.35C5.55998 13.35 5.55998 13.35 5.54998 13.35C3.64998 13.49 2.77998 14.95 2.77998 16.34C2.77998 17.73 3.64998 19.19 5.58998 19.33H16.63C17.79 19.31 18.9 18.91 19.76 18.13C21.32 16.76 21.43 14.81 21.01 13.44C20.59 12.06 19.42 10.5 17.38 10.24C17.05 10.2 16.79 9.95 16.73 9.62C16.33 7.22 15.03 5.56 13.08 4.96C11.05 4.34 8.70998 4.95 7.23998 6.48C5.90998 7.87 5.52998 9.79 6.14998 11.9C6.65998 11.97 7.14998 12.12 7.59998 12.35C7.96998 12.54 8.11998 12.99 7.92998 13.36C7.73998 13.73 7.28998 13.88 6.91998 13.69C6.50998 13.48 6.05998 13.37 5.60998 13.37C5.59998 13.35 5.58998 13.35 5.56998 13.35Z"
+            fill="#939393"
+          />
+          <path
+            d="M15.85 10.67C15.57 10.67 15.31 10.52 15.18 10.25C14.99 9.88 15.15 9.43 15.52 9.24C16.14 8.93 16.83 8.76 17.51 8.75C17.91 8.74 18.27 9.07 18.27 9.49C18.28 9.9 17.95 10.25 17.53 10.25C17.07 10.26 16.6 10.37 16.18 10.58C16.07 10.64 15.96 10.67 15.85 10.67Z"
+            fill="#939393"
+          />
+        </svg>
         <span>Storage</span>
       </div>
       <div class="storage-circle">
@@ -64,33 +148,32 @@
       <header>
         <div class="header-content flex-between">
           <div class="search">
-            <i class="fas fa-search"></i>
+            <img src="./images/search-normal.png" alt="" class="search-icon" />
             <input
               type="search"
               placeholder="Search for file, folder, shared storehouse"
               class="form-control"
             />
-            <img src="./images/filters.svg" />
+            <img src="./images/filters.svg" class="filters-icon" />
           </div>
-          <div class="file-upload">
-            <label class="file-upload-label flex-start" for="upload">
-              <p class="flex">
-                <i class="fas fa-cloud-upload-alt"></i>
-                Drag and drop <span>files</span> , <span>folders</span> or
-                <span>links</span>
-              </p>
-            </label>
+          <div class="upload flex-between">
+            <div class="file-upload">
+              <label class="file-upload-label flex-start" for="upload">
+                <p class="flex">
+                  <i class="fas fa-cloud-upload-alt"></i>
+                  Drag and drop <span>files</span> , <span>folders</span> or
+                  <span>links</span>
+                </p>
+              </label>
 
-            <input
-              class="file-upload-input"
-              id="upload"
-              type="file"
-              accept="image/*"
-            />
-          </div>
-          <img src="./images/link.png" />
-          <div class="user-info flex">
-            <img src="./images/profile.png" />
+              <input class="file-upload-input" id="upload" type="file" />
+            </div>
+            <a href="" class="link flex">
+              <img src="./images/link.png" />
+            </a>
+            <div class="user-info flex">
+              <img src="./images/profile.png" />
+            </div>
           </div>
         </div>
       </header>
@@ -130,7 +213,10 @@
                 <th>Uploaded</th>
                 <th>Size</th>
                 <th>View No.</th>
-                <th>Last modified</th>
+                <th class="flex-between">
+                  <div>Last modified</div>
+                  <img src="./images/arrow-down.png" alt="" />
+                </th>
               </tr>
             </thead>
             <tbody>
@@ -142,7 +228,12 @@
                   </label>
                 </td>
                 <td>
-                  <p class="truncate-text">Row 1, Column 1</p>
+                  <div class="table-details flex-start">
+                    <div class="unseen"></div>
+                    <img src="./images/image.jpeg" />
+                    <p class="truncate-text">the file that is the documents</p>
+                    <span>.png</span>
+                  </div>
                 </td>
                 <td>Nov 26, 2022 3:18AM</td>
                 <td>1.8 MB</td>

@@ -67,14 +67,13 @@ body {
 }
 
 .sidebar {
-  position: sticky;
+  position: relative;
   top: 0;
   left: 0;
   bottom: 0;
   width: 250px;
   height: 100vh;
   color: var(--white-color);
-  overflow: hidden;
   transition: all 0.3s ease-in-out;
   background-color: #121212;
 }
@@ -141,6 +140,18 @@ body {
   color: var(--primary-color);
 }
 
+.menu .active svg {
+  fill: var(--primary-color);
+}
+
+.menu svg {
+  fill: #939393;
+}
+
+.menu li:hover svg {
+  fill: var(--primary-color);
+}
+
 .logo a,
 .menu a {
   color: var(--text-color);
@@ -162,10 +173,6 @@ body {
   overflow: hidden;
 }
 
-.menu a i {
-  font-size: 1.2rem;
-}
-
 .menu {
   border-bottom: 1px solid var(--main-color);
 }
@@ -179,9 +186,6 @@ body {
   gap: 1.5rem;
   color: var(--text-color);
   margin: 30px 0;
-}
-
-.storage-icon i {
   padding-inline-start: 40px;
 }
 
@@ -283,15 +287,13 @@ body {
   width: 100%;
 }
 
-.search i {
+.search .search-icon {
   position: absolute;
   top: 13px;
   left: 15px;
-  color: var(--text-color);
-  font-size: 22px;
 }
 
-.search img {
+.search .filters-icon {
   position: absolute;
   top: 13px;
   right: 15px;
@@ -337,6 +339,7 @@ body {
   height: 35px;
   border-radius: 50%;
   background-color: #242e22;
+  cursor: pointer;
 }
 
 .profile {
@@ -480,7 +483,7 @@ table tbody td:nth-child(2) {
 }
 
 .truncate-text {
-  width: 140px;
+  max-width: 140px;
 }
 
 .truncate-modified {
@@ -497,7 +500,7 @@ table::-webkit-scrollbar {
 
 .table-data {
   overflow-y: scroll;
-  height: 500px;
+  max-height: calc(100vh - 320px);
   display: block;
   width: 100%;
 }
@@ -514,4 +517,31 @@ table::-webkit-scrollbar {
 .table-data::-webkit-scrollbar-thumb {
   background-color: #121212;
   border-radius: 8px;
+}
+
+.table-details {
+  position: relative;
+}
+
+.table-details .unseen {
+  position: absolute;
+  content: "";
+  top: 10px;
+  left: -17px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: var(--primary-color);
+  margin-inline-end: 5px;
+}
+
+.table-details img {
+  width: 30px;
+  height: 30px;
+  border-radius: 4px;
+  margin-inline-end: 5px;
+}
+
+.upload .link {
+  margin: 0 25px;
 }

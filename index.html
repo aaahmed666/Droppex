@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/fontawsome.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="sidebar">
+      <div class="logo flex-start">
+        <a href="#">
+          <img src="./images/logo.jpg" alt="logo" />
+          <span>Droppex</span>
+        </a>
+      </div>
+      <div class="new-folder flex-start">
+        <i class="fas fa-folder-plus"></i>
+        <span>New folder</span>
+      </div>
+      <ul class="menu">
+        <li class="active">
+          <a href="#">
+            <i class="fas fa-th-large"></i>
+            <span>Home</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="far fa-trash-alt"></i>
+            <span>Trash</span>
+          </a>
+        </li>
+      </ul>
+      <div class="storage-icon flex-start">
+        <i class="fas fa-cloud"></i>
+        <span>Storage</span>
+      </div>
+      <div class="storage-circle">
+        <div class="circle-wrap">
+          <div class="main-circle">
+            <div class="mask full">
+              <div class="fill"></div>
+            </div>
+            <div class="mask half">
+              <div class="fill"></div>
+            </div>
+            <div class="inside-circle">10%</div>
+          </div>
+        </div>
+        <span>10GB / 100GB</span>
+      </div>
+    </div>
+
+    <main class="main">
+      <header>
+        <div class="header-content flex-between">
+          <div class="search">
+            <i class="fas fa-search"></i>
+            <input
+              type="search"
+              placeholder="Search for file, folder, shared storehouse"
+              class="form-control"
+            />
+            <img src="./images/filters.svg" />
+          </div>
+          <div class="file-upload">
+            <label class="file-upload-label flex-start" for="upload">
+              <p class="flex">
+                <i class="fas fa-cloud-upload-alt"></i>
+                Drag and drop <span>files</span> , <span>folders</span> or
+                <span>links</span>
+              </p>
+            </label>
+
+            <input
+              class="file-upload-input"
+              id="upload"
+              type="file"
+              accept="image/*"
+            />
+          </div>
+          <img src="./images/link.png" />
+          <div class="user-info flex">
+            <img src="./images/profile.png" />
+          </div>
+        </div>
+      </header>
+
+      <section>
+        <div class="profile flex-between">
+          <p>Ramy Main Drive</p>
+          <img src="./images/info.png" />
+        </div>
+        <div class="user-data flex-between">
+          <p>Select folder or file to see options</p>
+          <div class="user-items flex-between">
+            <p>No item selected</p>
+            <div class="filter-icon">
+              <img src="./images/sort.png" />
+              <img src="./images/filter.png" />
+            </div>
+            <div class="option-icon">
+              <img src="./images/ShowHide.png" />
+              <img src="./images/option.png" />
+              <img src="./images/toggle.png" />
+              <img src="./images/Options.png" />
+            </div>
+          </div>
+        </div>
+        <div class="table-data">
+          <table>
+            <thead>
+              <tr>
+                <th>
+                  <label class="custom-checkbox flex">
+                    <input type="checkbox" />
+                    <span class="checkmark"></span>
+                  </label>
+                </th>
+                <th>Name</th>
+                <th>Uploaded</th>
+                <th>Size</th>
+                <th>View No.</th>
+                <th>Last modified</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <label class="custom-checkbox flex">
+                    <input type="checkbox" />
+                    <span class="checkmark"></span>
+                  </label>
+                </td>
+                <td>
+                  <p class="truncate-text">Row 1, Column 1</p>
+                </td>
+                <td>Nov 26, 2022 3:18AM</td>
+                <td>1.8 MB</td>
+                <td>0 times</td>
+                <td>
+                  <p class="truncate-modified">
+                    Dec 10, 2022 2:00PM user@gmail.com
+                  </p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <label class="custom-checkbox flex">
+                    <input type="checkbox" />
+                    <span class="checkmark"></span>
+                  </label>
+                </td>
+                <td>
+                  <p class="truncate-text">
+                    his is a paragraph inside a table cell
+                  </p>
+                </td>
+                <td>Nov 26, 2022 3:18AM</td>
+                <td>1.8 MB</td>
+                <td>2 times</td>
+                <td>
+                  <p class="truncate-modified">Dec 10, 2022 2:00PM you</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <label class="custom-checkbox flex">
+                    <input type="checkbox" />
+                    <span class="checkmark"></span>
+                  </label>
+                </td>
+                <td>
+                  <p class="truncate-text">
+                    his is a paragraph inside a table cell
+                  </p>
+                </td>
+                <td>Nov 26, 2022 3:18AM</td>
+                <td>1.8 MB</td>
+                <td>2 times</td>
+                <td>
+                  <p class="truncate-modified">Dec 10, 2022 2:00PM you</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <label class="custom-checkbox flex">
+                    <input type="checkbox" />
+                    <span class="checkmark"></span>
+                  </label>
+                </td>
+                <td>
+                  <p class="truncate-text">
+                    his is a paragraph inside a table cell
+                  </p>
+                </td>
+                <td>Nov 26, 2022 3:18AM</td>
+                <td>1.8 MB</td>
+                <td>2 times</td>
+                <td>
+                  <p class="truncate-modified">Dec 10, 2022 2:00PM you</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <label class="custom-checkbox flex">
+                    <input type="checkbox" />
+                    <span class="checkmark"></span>
+                  </label>
+                </td>
+                <td>
+                  <p class="truncate-text">
+                    his is a paragraph inside a table cell
+                  </p>
+                </td>
+                <td>Nov 26, 2022 3:18AM</td>
+                <td>1.8 MB</td>
+                <td>2 times</td>
+                <td>
+                  <p class="truncate-modified">Dec 10, 2022 2:00PM you</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <label class="custom-checkbox flex">
+                    <input type="checkbox" />
+                    <span class="checkmark"></span>
+                  </label>
+                </td>
+                <td>
+                  <p class="truncate-text">
+                    his is a paragraph inside a table cell
+                  </p>
+                </td>
+                <td>Nov 26, 2022 3:18AM</td>
+                <td>1.8 MB</td>
+                <td>2 times</td>
+                <td>
+                  <p class="truncate-modified">Dec 10, 2022 2:00PM you</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <label class="custom-checkbox flex">
+                    <input type="checkbox" />
+                    <span class="checkmark"></span>
+                  </label>
+                </td>
+                <td>
+                  <p class="truncate-text">
+                    his is a paragraph inside a table cell
+                  </p>
+                </td>
+                <td>Nov 26, 2022 3:18AM</td>
+                <td>1.8 MB</td>
+                <td>2 times</td>
+                <td>
+                  <p class="truncate-modified">Dec 10, 2022 2:00PM you</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <label class="custom-checkbox flex">
+                    <input type="checkbox" />
+                    <span class="checkmark"></span>
+                  </label>
+                </td>
+                <td>
+                  <p class="truncate-text">
+                    his is a paragraph inside a table cell
+                  </p>
+                </td>
+                <td>Nov 26, 2022 3:18AM</td>
+                <td>1.8 MB</td>
+                <td>2 times</td>
+                <td>
+                  <p class="truncate-modified">Dec 10, 2022 2:00PM you</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <label class="custom-checkbox flex">
+                    <input type="checkbox" />
+                    <span class="checkmark"></span>
+                  </label>
+                </td>
+                <td>
+                  <p class="truncate-text">
+                    his is a paragraph inside a table cell
+                  </p>
+                </td>
+                <td>Nov 26, 2022 3:18AM</td>
+                <td>1.8 MB</td>
+                <td>2 times</td>
+                <td>
+                  <p class="truncate-modified">Dec 10, 2022 2:00PM you</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <label class="custom-checkbox flex">
+                    <input type="checkbox" />
+                    <span class="checkmark"></span>
+                  </label>
+                </td>
+                <td>
+                  <p class="truncate-text">
+                    his is a paragraph inside a table cell
+                  </p>
+                </td>
+                <td>Nov 26, 2022 3:18AM</td>
+                <td>1.8 MB</td>
+                <td>2 times</td>
+                <td>
+                  <p class="truncate-modified">Dec 10, 2022 2:00PM you</p>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

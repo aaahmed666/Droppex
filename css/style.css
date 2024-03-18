@@ -78,6 +78,23 @@ body {
   background-color: #121212;
 }
 
+html[dir="rtl"] .logo,
+html[dir="rtl"] .new-folder {
+  direction: rtl;
+}
+
+html[dir="rtl"] .sidebar {
+  direction: ltr;
+}
+
+html[dir="rtl"] nav {
+  direction: rtl;
+}
+
+html[dir="ltr"] nav {
+  direction: ltr;
+}
+
 .logo {
   height: 80px;
   padding: 10px;
@@ -121,7 +138,6 @@ body {
   content: "";
   position: absolute;
   top: 10px;
-  left: 0;
   width: 7px;
   height: 32px;
   background: linear-gradient(
@@ -131,8 +147,24 @@ body {
     transparent 50%,
     transparent 100%
   );
-  border-top-right-radius: 10px;
-  border-bottom-right-radius: 10px;
+}
+
+html[dir="rtl"] .menu li:hover::before,
+html[dir="rtl"] .menu li.active a::before,
+html[dir="rtl"] .menu li:hover a::before {
+  right: 0;
+  border-radius: 10px 0px 0px 10px;
+}
+
+html[dir="ltr"] .menu li:hover::before,
+html[dir="ltr"] .menu li.active a::before,
+html[dir="ltr"] .menu li:hover a::before {
+  left: 0;
+  border-radius: 0px 10px 10px 0px;
+}
+
+html[dir="rtl"] .storage-icon {
+  direction: rtl;
 }
 
 .menu li:hover a,
@@ -290,12 +322,26 @@ body {
 .search .search-icon {
   position: absolute;
   top: 13px;
+}
+
+html[dir="rtl"] .search .search-icon {
+  right: 15px;
+}
+
+html[dir="ltr"] .search .search-icon {
   left: 15px;
 }
 
 .search .filters-icon {
   position: absolute;
   top: 13px;
+}
+
+html[dir="rtl"] .search .filters-icon {
+  left: 15px;
+}
+
+html[dir="ltr"] .search .filters-icon {
   right: 15px;
 }
 
@@ -308,7 +354,7 @@ body {
 }
 
 .file-upload-label {
-  padding: 10px 20px;
+  padding: 10px 15px;
   color: var(--white-color);
   border-radius: 10px;
   cursor: pointer;
@@ -323,8 +369,8 @@ body {
   font-size: 14px;
 }
 
-.file-upload-label i {
-  margin-inline-end: 5px;
+.file-upload-label img {
+  margin-inline-end: 8px;
 }
 
 .file-upload-label span {
@@ -368,13 +414,6 @@ body {
   padding: 10px 10px 0px 10px;
 }
 
-.custom-checkbox label {
-  display: block;
-  margin-bottom: 10px;
-  cursor: pointer;
-}
-
-.custom-checkbox input[type="radio"],
 .custom-checkbox input[type="checkbox"] {
   appearance: none;
   background-color: var(--main-color);
@@ -384,9 +423,9 @@ body {
   border-radius: 4px;
   display: inline-grid;
   place-content: center;
+  cursor: pointer;
 }
 
-.custom-checkbox input[type="radio"]::before,
 .custom-checkbox input[type="checkbox"]::before {
   content: "";
   width: 10px;
@@ -397,12 +436,10 @@ body {
   clip-path: polygon(13% 50%, 34% 66%, 81% 2%, 100% 18%, 39% 100%, 0 71%);
 }
 
-.custom-checkbox input[type="radio"]:checked::before,
 .custom-checkbox input[type="checkbox"]:checked::before {
   transform: scale(1);
 }
 
-.custom-checkbox input[type="radio"]:checked,
 .custom-checkbox input[type="checkbox"]:checked {
   background-color: var(--text-color);
 }
@@ -436,11 +473,25 @@ table thead th:first-child,
 table tbody td:first-child {
   width: 10px;
   height: 20px;
+}
+
+html[dir="rtl"] table thead th:first-child,
+html[dir="rtl"] table tbody td:first-child {
+  border-radius: 0px 10px 10px 0px;
+}
+
+html[dir="ltr"] table thead th:first-child,
+html[dir="ltr"] table tbody td:first-child {
   border-radius: 10px 0px 0px 10px;
 }
 
-table thead th:last-child,
-table tbody td:last-child {
+html[dir="rtl"] table thead th:last-child,
+html[dir="rtl"] table tbody td:last-child {
+  border-radius: 10px 0px 0px 10px;
+}
+
+html[dir="ltr"] table thead th:last-child,
+html[dir="ltr"] table tbody td:last-child {
   border-radius: 0px 10px 10px 0px;
 }
 
@@ -460,6 +511,16 @@ table thead th {
 
 table tbody td {
   font-size: 14px;
+}
+
+html[dir="rtl"] table tbody td {
+  direction: ltr;
+  text-align: end;
+}
+
+html[dir="rtl"] .table-details {
+  align-items: flex-end;
+  direction: rtl;
 }
 
 table thead th {
@@ -490,6 +551,16 @@ table tbody td:nth-child(2) {
   width: 240px;
 }
 
+.user-data img,
+.profile img {
+  cursor: pointer;
+}
+
+html[dir="rtl"] .truncate-modified {
+  unicode-bidi: plaintext;
+  direction: rtl;
+}
+
 table thead tr {
   background-color: #171717;
 }
@@ -500,7 +571,7 @@ table::-webkit-scrollbar {
 
 .table-data {
   overflow-y: scroll;
-  max-height: calc(100vh - 320px);
+  height: calc(100vh - 320px);
   display: block;
   width: 100%;
 }
@@ -527,7 +598,6 @@ table::-webkit-scrollbar {
   position: absolute;
   content: "";
   top: 10px;
-  left: -17px;
   width: 10px;
   height: 10px;
   border-radius: 50%;
@@ -535,9 +605,24 @@ table::-webkit-scrollbar {
   margin-inline-end: 5px;
 }
 
+html[dir="rtl"] .table-details .unseen {
+  right: -17px;
+}
+
+html[dir="ltr"] .table-details .unseen {
+  left: -17px;
+}
+
 .table-details img {
   width: 30px;
   height: 30px;
+  border-radius: 4px;
+  margin-inline-end: 5px;
+}
+
+.table-details .auto {
+  width: auto;
+  height: auto;
   border-radius: 4px;
   margin-inline-end: 5px;
 }
